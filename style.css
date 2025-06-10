@@ -1,0 +1,15 @@
+/* 
+Design Notes: 
+    Font: Indie flower for title
+    Inria Sans for all annen tekst
+    
+    */
+
+/* Font import */
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+
+/* CSS reset */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
