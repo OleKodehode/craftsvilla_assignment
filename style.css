@@ -89,6 +89,10 @@ a:active {
   background-color: #cd840f;
 }
 
+.nav_buttons:active {
+  background-color: #14213d;
+}
+
 nav {
   display: flex;
   flex-flow: row nowrap;
@@ -116,6 +120,10 @@ nav {
 
 #top:hover {
   color: #fca311;
+}
+
+#top:active {
+  color: #cd840f;
 }
 
 li {
