@@ -108,6 +108,10 @@ nav {
   letter-spacing: 1.5px;
 }
 
+#top:hover {
+  color: #fca311;
+}
+
 li {
   list-style-type: none;
 }
