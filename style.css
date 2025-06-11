@@ -3,6 +3,10 @@ Design Notes:
     Font: Indie flower for title
     Inria Sans for all annen tekst
     
+Colors:
+  White: #e5e5e5
+  orange: #cd840f
+  blue: #14213d
 */
 
 /* 
@@ -10,7 +14,14 @@ HTML tags, classes and IDs
 Header -> Nav -> section #navigation -> a #top / ul .header_ul -> li a .nav_buttons
 Footer -> Article #contact_info (-> pre) / #copyright_article (-> p #copyright_text)
 Article #nav_footer -> ul .footer_ul -> li a .nav_buttons
+p .section_title .section_p .price_bold .price_italic .center_aligned_text
+
 index;
+div #landing_img
+section .main_sections 
+#summary_section #price_section #booking_section #gallery_section #feedback_section
+article #homepage_img_ceontainer
+img .gallery_pics
 
 booking;
 
