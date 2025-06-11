@@ -14,7 +14,7 @@ HTML tags, classes and IDs
 Header -> Nav -> section #navigation -> a #top / ul .header_ul -> li a .nav_buttons
 Footer -> Article #contact_info (-> pre) / #copyright_article (-> p #copyright_text)
 Article #nav_footer -> ul .footer_ul -> li a .nav_buttons
-p .section_title .section_p .price_bold .price_italic .center_aligned_text
+p .section_title .section_p .price_bold .price_italic .center_aligned_text .alt_color
 
 index;
 div #landing_img
@@ -24,6 +24,10 @@ article #homepage_img_ceontainer
 img .gallery_pics
 
 booking;
+section #section_title #booking_section
+form #booking_form
+article .form_article
+input textarea button #form_submit
 
 feedback;
 
@@ -54,6 +58,7 @@ body {
   align-items: center;
   background-color: #14213d;
   gap: 2svh;
+  min-height: 100svh;
 }
 
 #emptybox {
@@ -106,6 +111,7 @@ nav {
   font-family: "indie flower", sans-serif;
   font-size: 42px;
   letter-spacing: 1.5px;
+  padding-left: 10svw; /* to get it more center aligned with space-between */
 }
 
 #top:hover {
@@ -180,6 +186,64 @@ li {
   border: #14213d 5px solid;
 }
 
+#section_title {
+  color: #e5e5e5;
+}
+
+#booking_form {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  gap: 1.5em;
+  text-align: center;
+}
+
+.form_article {
+  display: flex;
+  flex-flow: row nowrap;
+  width: 80%;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2em;
+}
+
+input {
+  border-radius: 5px;
+  padding: 3px;
+  width: 30svw;
+  min-width: 300px;
+  height: 3em;
+  text-align: center;
+}
+
+textarea {
+  border-radius: 5px;
+  padding: 3px;
+  min-width: 300px;
+}
+
+#form_submit {
+  text-align: center;
+  width: 10svw;
+  height: 10svh;
+  min-width: 50px;
+  min-height: 100px;
+  border-radius: 25px;
+  border: none;
+  background-color: #fca311;
+  color: #14213d;
+  margin-left: 10svw;
+}
+
+#form_submit:hover {
+  background-color: #cd840f;
+  color: #e5e5e5;
+}
+
+#form_submit:active {
+  background-color: #14213d;
+}
+
 footer {
   display: flex;
   flex-flow: row nowrap;
@@ -206,6 +270,7 @@ footer {
 
 footer {
   width: 100%;
+  bottom: 0;
 }
 .footer_ul {
   margin-right: 0.5em;
