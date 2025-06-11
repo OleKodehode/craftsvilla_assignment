@@ -209,6 +209,7 @@ li {
 
 input {
   border-radius: 5px;
+  border: solid #14213d 2px;
   padding: 3px;
   width: 30svw;
   min-width: 300px;
@@ -216,10 +217,20 @@ input {
   text-align: center;
 }
 
+select {
+  border-radius: 5px;
+  width: 18svw;
+  min-width: 300px;
+  height: 3em;
+  text-align: center;
+  border: solid #14213d 2px;
+}
+
 textarea {
   border-radius: 5px;
   padding: 3px;
   min-width: 300px;
+  border: solid #14213d 2px;
 }
 
 #form_submit {
