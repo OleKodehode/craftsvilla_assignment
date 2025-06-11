@@ -3,7 +3,22 @@ Design Notes:
     Font: Indie flower for title
     Inria Sans for all annen tekst
     
-    */
+*/
+
+/* 
+HTML tags, classes and IDs
+Header -> Nav -> section #navigation -> a #top / ul .header_ul -> li a .nav_buttons
+Footer -> Article #contact_info (-> pre) / #copyright_article (-> p #copyright_text)
+Article #nav_footer -> ul .footer_ul -> li a .nav_buttons
+index;
+
+booking;
+
+feedback;
+
+gallery;
+
+*/
 
 /* Font import */
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
@@ -11,5 +26,173 @@ Design Notes:
 /* CSS reset */
 * {
   margin: 0;
+  padding: 0;
   box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  width: 100svw;
+  overflow-x: hidden;
+  font-family: "Inria Sans", sans-serif; /* Default font-family for the site */
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #14213d;
+  gap: 2svh;
+}
+
+#emptybox {
+  width: 18svw;
+}
+
+#landing_img {
+  background-image: url(./img/river-fx-ZxzQGmH65W0-unsplash.jpg);
+  width: 100%;
+  height: auto;
+  min-height: 500px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+a,
+a:visited,
+a:active {
+  text-decoration: none;
+}
+
+.nav_buttons:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #cd840f;
+}
+
+nav {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+  height: 70px;
+  width: 100svw;
+  background-color: #e5e5e5;
+}
+
+.header_ul {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 1.5em;
+}
+
+#top {
+  color: #14213d;
+  font-family: "indie flower", sans-serif;
+  font-size: 42px;
+  letter-spacing: 1.5px;
+}
+
+li {
+  list-style-type: none;
+}
+
+.nav_buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  gap: 0.5em;
+  background-color: #fca311;
+  padding: 0.75em;
+  border-radius: 15px;
+  color: #14213d;
+}
+
+.main_sections {
+  background-color: #e5e5e5;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5svh 5svw;
+  width: 80svw;
+  border-radius: 15px;
+  gap: 3svh;
+}
+
+.section_title {
+  font-family: "indie flower", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.section_p {
+  width: 65%;
+}
+
+.center_aligned_text {
+  text-align: center;
+}
+
+.price_bold {
+  font-weight: bold;
+  font-size: 1.4em;
+  word-spacing: 10px;
+}
+
+.price_italic {
+  font-style: italic;
+  font-weight: 300;
+}
+
+#homepage_img_container {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+}
+
+.gallery_pics {
+  height: 250px;
+  width: 250px;
+  background-color: #fca311;
+  border-radius: 20px;
+  object-fit: cover;
+  border: #14213d 5px solid;
+}
+
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-content: center;
+  padding: 0.5em 1em;
+  background-color: #e5e5e5;
+}
+
+.footer_ul {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 2em;
+}
+
+#contact_info {
+  align-self: center;
+}
+
+#copyright_article {
+  align-self: center;
+  font-style: italic;
+}
+
+footer {
+  width: 100%;
+}
+.footer_ul {
+  margin-right: 0.5em;
+  gap: 0.25em;
 }
