@@ -36,6 +36,47 @@
         </section>
       </nav>
     </header>
+    <section id="section_title">
+      <p class="section_title alt_color">Tilbakemelding - Ris & Ros</p>
+    </section>
+    <section id="feedback_section" class="main_sections">
+      <p class="section_p">
+        Om dere har tilbakemelding for oss etter å ha deltatt så vil vi gjerne
+        høre fra dere. <br />Om det så skulle være positivt eller negativt!
+        Skriv inn navn, e-post og tilbakemelding under
+      </p>
+      <form id="booking_form">
+        <article class="form_article">
+          <p class="section_p">Navn</p>
+          <input
+            type="text"
+            name="full_name"
+            placeholder="For- og Etternavn"
+            required
+          />
+        </article>
+        <article class="form_article">
+          <p class="section_p">E-Post</p>
+          <input
+            type="email"
+            name="personal_email"
+            placeholder="navn@eksempel.no"
+            required
+          />
+        </article>
+        <article class="form_article">
+          <p class="section_p">Kommentar</p>
+          <textarea
+            name="comment_field"
+            cols="40"
+            rows="5"
+            placeholder="Tilbakemelding her"
+          ></textarea>
+        </article>
+        <button type="submit" id="form_submit">Send inn</button>
+      </form>
+    </section>
+
     <footer>
       <article id="contact_info">
         <pre>
@@ -59,7 +100,9 @@
           <li><a href="./booking.html" class="nav_buttons">Booking</a></li>
           <li><a href="./gallery.html" class="nav_buttons">Galleri</a></li>
           <li>
-            <a href="./feedback.html" class="nav_buttons">Tilbakemeldinger</a>
+            <a href="./feedback.html" class="nav_buttons active_nav"
+              >Tilbakemeldinger</a
+            >
           </li>
           <li><a href="#top" class="nav_buttons">Tilbake til topp</a></li>
         </ul>

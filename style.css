@@ -162,6 +162,7 @@ li {
 
 .section_p {
   width: 65%;
+  text-align: center;
 }
 
 .center_aligned_text {
@@ -227,7 +228,7 @@ input {
 
 select {
   border-radius: 5px;
-  width: 18svw;
+  width: 30svw;
   min-width: 300px;
   height: 3em;
   text-align: center;
@@ -238,6 +239,7 @@ textarea {
   border-radius: 5px;
   padding: 3px;
   min-width: 300px;
+  width: 30svw;
   border: solid #14213d 2px;
 }
 
@@ -245,7 +247,7 @@ textarea {
   text-align: center;
   width: 10svw;
   height: 10svh;
-  min-width: 50px;
+  min-width: 100px;
   min-height: 100px;
   border-radius: 25px;
   border: none;
