@@ -69,7 +69,7 @@ body {
   background-image: url(./img/river-fx-ZxzQGmH65W0-unsplash.jpg);
   width: 100%;
   height: auto;
-  min-height: 500px;
+  min-height: 80svh;
 
   background-attachment: fixed;
   background-position: center;
@@ -291,7 +291,13 @@ footer {
   width: 100%;
   bottom: 0;
 }
+
 .footer_ul {
   margin-right: 0.5em;
   gap: 0.25em;
+}
+
+.active_nav {
+  background-color: #cd840f;
+  color: #e5e5e5;
 }
