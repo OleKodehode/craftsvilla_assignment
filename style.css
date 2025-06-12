@@ -245,10 +245,10 @@ textarea {
 
 #form_submit {
   text-align: center;
-  width: 10svw;
-  height: 10svh;
-  min-width: 100px;
-  min-height: 100px;
+  width: 8svw;
+  height: 5svh;
+  min-width: 75px;
+  min-height: 50px;
   border-radius: 25px;
   border: none;
   background-color: #fca311;
