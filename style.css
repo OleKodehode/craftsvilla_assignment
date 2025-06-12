@@ -265,6 +265,29 @@ textarea {
   background-color: #14213d;
 }
 
+.image_grid {
+  display: grid;
+  gap: 5svw;
+  border-radius: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.thumbnails {
+  border-radius: 10px;
+  max-width: 30svw;
+  height: 40svh;
+  box-shadow: 10px 10px 5px #14213d;
+  justify-self: center;
+}
+
+.thumbnails:hover {
+  outline: 5px dashed #fca311;
+}
+
+.top_margin {
+  margin-top: 4svh;
+}
+
 footer {
   display: flex;
   flex-flow: row nowrap;
