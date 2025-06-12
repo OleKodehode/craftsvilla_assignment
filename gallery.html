@@ -47,16 +47,19 @@
           src="./img/hakon-grimstad-Be7mMqJCmps-unsplash.jpg"
           alt="Mosaikk kunstverk 1"
           class="thumbnails"
+          onclick="openLightbox();currentSlide(1)"
         />
         <img
           src="./img/toa-heftiba-D9EgMp2V85o-unsplash.jpg"
           alt="Mosaikk kunstverk 2"
           class="thumbnails"
+          onclick="openLightbox();currentSlide(2)"
         />
         <img
           src="./img/kiran-naidu-YUIeZWvwMzo-unsplash.jpg"
           alt="Mosaikk kunstverk 3"
           class="thumbnails"
+          onclick="openLightbox();currentSlide(3)"
         />
       </section>
       <p class="section_title top_margin">Akvarellmaling</p>
@@ -65,41 +68,47 @@
           src="./img/david-clode-o4bJomJEQvc-unsplash.jpg"
           alt="Akvarellmaling 1"
           class="thumbnails"
+          onclick="openLightbox();currentSlide(4)"
         /><img
           src="./img/david-clode-rtKuJUQF6Ls-unsplash.jpg"
           alt="Akvarellmaling 2"
           class="thumbnails"
+          onclick="openLightbox();currentSlide(5)"
         /><img
           src="./img/david-clode-Ysmu6i5bfIc-unsplash.jpg"
           alt="Akvarellmaling 3"
           class="thumbnails"
+          onclick="openLightbox();currentSlide(6)"
         />
       </section>
-
       <p class="section_title top_margin">Lerretsmaling</p>
       <section class="image_grid">
         <img
           src="./img/catherine-kay-greenup-giX7_hKGHQA-unsplash.jpg"
           alt="lerretsmaling 1"
           class="thumbnails"
+          onclick="openLightbox();currentSlide(7)"
         /><img
           src="./img/mcgill-library-FeqoBC1meok-unsplash.jpg"
           alt="lerretsmaling 2"
           class="thumbnails"
+          onclick="openLightbox();currentSlide(8)"
         /><img
           src="./img/mcgill-library-y4PqRPqSako-unsplash.jpg"
           alt="lerretsmaling 3"
           class="thumbnails"
+          onclick="openLightbox();currentSlide(9)"
         /><img
           src="./img/museum-of-new-zealand-te-papa-tongarewa-AWydLjM_I08-unsplash.jpg"
           alt="lerretsmaling 4"
           class="thumbnails"
+          onclick="openLightbox();currentSlide(10)"
         />
       </section>
     </section>
     <!-- lightbox beneath -->
-    <section class="lightbox">
-      <span class="close" onclick="closeLightbox()">&times;</span>
+    <section class="lightbox" id="galleryLightbox">
+      <span class="close cursor" onclick="closeLightbox()">&times;</span>
       <section class="lightbox_content">
         <article class="lightbox_slides">
           <span class="number_text">1 / 10</span>
@@ -172,89 +181,91 @@
           />
         </article>
         <!-- Next/Previous -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        <a class="prev cursor" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next cursor" onclick="plusSlides(1)">&#10095;</a>
         <!-- Thumbnail carousel image control -->
-        <article class="column">
-          <img
-            src="./img/hakon-grimstad-Be7mMqJCmps-unsplash.jpg"
-            alt="1 av 10 karusell"
-            class="demo"
-            onclick="currentSlide(1)"
-          />
-        </article>
-        <article class="column">
-          <img
-            src="./img/toa-heftiba-D9EgMp2V85o-unsplash.jpg"
-            alt="2 av 10 karusell"
-            class="demo"
-            onclick="currentSlide(2)"
-          />
-        </article>
-        <article class="column">
-          <img
-            src="./img/kiran-naidu-YUIeZWvwMzo-unsplash.jpg"
-            alt="3 av 10 karusell"
-            class="demo"
-            onclick="currentSlide(3)"
-          />
-        </article>
-        <article class="column">
-          <img
-            src="./img/david-clode-o4bJomJEQvc-unsplash.jpg"
-            alt="4 av 10 karusell"
-            class="demo"
-            onclick="currentSlide(4)"
-          />
-        </article>
-        <article class="column">
-          <img
-            src="./img/david-clode-rtKuJUQF6Ls-unsplash.jpg"
-            alt="5 av 10 karusell"
-            class="demo"
-            onclick="currentSlide(5)"
-          />
-        </article>
-        <article class="column">
-          <img
-            src="./img/david-clode-Ysmu6i5bfIc-unsplash.jpg"
-            alt="6 av 10 karusell"
-            class="demo"
-            onclick="currentSlide(6)"
-          />
-        </article>
-        <article class="column">
-          <img
-            src="./img/catherine-kay-greenup-giX7_hKGHQA-unsplash.jpg"
-            alt="7 av 10 karusell"
-            class="demo"
-            onclick="currentSlide(7)"
-          />
-        </article>
-        <article class="column">
-          <img
-            src="./img/mcgill-library-FeqoBC1meok-unsplash.jpg"
-            alt="8 av 10 karusell"
-            class="demo"
-            onclick="currentSlide(8)"
-          />
-        </article>
-        <article class="column">
-          <img
-            src="./img/mcgill-library-y4PqRPqSako-unsplash.jpg"
-            alt="9 av 10 karusell"
-            class="demo"
-            onclick="currentSlide(9)"
-          />
-        </article>
-        <article class="column">
-          <img
-            src="./img/museum-of-new-zealand-te-papa-tongarewa-AWydLjM_I08-unsplash.jpg"
-            alt="10 av 10 karusell"
-            class="demo"
-            onclick="currentSlide(10)"
-          />
-        </article>
+        <section class="image_select">
+          <article class="column">
+            <img
+              src="./img/hakon-grimstad-Be7mMqJCmps-unsplash.jpg"
+              alt="1 av 10 karusell"
+              class="demo cursor"
+              onclick="currentSlide(1)"
+            />
+          </article>
+          <article class="column">
+            <img
+              src="./img/toa-heftiba-D9EgMp2V85o-unsplash.jpg"
+              alt="2 av 10 karusell"
+              class="demo cursor"
+              onclick="currentSlide(2)"
+            />
+          </article>
+          <article class="column">
+            <img
+              src="./img/kiran-naidu-YUIeZWvwMzo-unsplash.jpg"
+              alt="3 av 10 karusell"
+              class="demo cursor"
+              onclick="currentSlide(3)"
+            />
+          </article>
+          <article class="column">
+            <img
+              src="./img/david-clode-o4bJomJEQvc-unsplash.jpg"
+              alt="4 av 10 karusell"
+              class="demo cursor"
+              onclick="currentSlide(4)"
+            />
+          </article>
+          <article class="column">
+            <img
+              src="./img/david-clode-rtKuJUQF6Ls-unsplash.jpg"
+              alt="5 av 10 karusell"
+              class="demo cursor"
+              onclick="currentSlide(5)"
+            />
+          </article>
+          <article class="column">
+            <img
+              src="./img/david-clode-Ysmu6i5bfIc-unsplash.jpg"
+              alt="6 av 10 karusell"
+              class="demo cursor"
+              onclick="currentSlide(6)"
+            />
+          </article>
+          <article class="column">
+            <img
+              src="./img/catherine-kay-greenup-giX7_hKGHQA-unsplash.jpg"
+              alt="7 av 10 karusell"
+              class="demo cursor"
+              onclick="currentSlide(7)"
+            />
+          </article>
+          <article class="column">
+            <img
+              src="./img/mcgill-library-FeqoBC1meok-unsplash.jpg"
+              alt="8 av 10 karusell"
+              class="demo cursor"
+              onclick="currentSlide(8)"
+            />
+          </article>
+          <article class="column">
+            <img
+              src="./img/mcgill-library-y4PqRPqSako-unsplash.jpg"
+              alt="9 av 10 karusell"
+              class="demo cursor"
+              onclick="currentSlide(9)"
+            />
+          </article>
+          <article class="column">
+            <img
+              src="./img/museum-of-new-zealand-te-papa-tongarewa-AWydLjM_I08-unsplash.jpg"
+              alt="10 av 10 karusell"
+              class="demo cursor"
+              onclick="currentSlide(10)"
+            />
+          </article>
+        </section>
       </section>
     </section>
     <footer>
